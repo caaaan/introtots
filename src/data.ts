@@ -1,5 +1,5 @@
 type media = {id: number, src: string, duration: number, type: string};
-export const PlaylistData: media[] = [
+const PlaylistData: media[] = [
     {
       id: 1,
       src: "/Users/canborcbakan/introtots/media/IMG_7276-transformed.jpeg",
@@ -19,4 +19,4 @@ export const PlaylistData: media[] = [
       type: "image"
     }
   ];
-
+export default PlaylistData

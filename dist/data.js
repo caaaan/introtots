@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PlaylistData = void 0;
-exports.PlaylistData = [
+var PlaylistData = [
     {
         id: 1,
         src: "/Users/canborcbakan/introtots/media/IMG_7276-transformed.jpeg",
@@ -21,3 +20,4 @@ exports.PlaylistData = [
         type: "image"
     }
 ];
+exports.default = PlaylistData;
