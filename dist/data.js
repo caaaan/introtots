@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var PlaylistData = [
+const PlaylistData = [
     {
         id: 1,
-        src: "/Users/canborcbakan/introtots/media/IMG_7276-transformed.jpeg",
+        src: "/Users/canborcbakan/introtots/dist/media/IMG_7276-transformed.jpeg",
         duration: 5000,
         type: "image"
     },
@@ -21,3 +21,4 @@ var PlaylistData = [
     }
 ];
 exports.default = PlaylistData;
+//# sourceMappingURL=data.js.map

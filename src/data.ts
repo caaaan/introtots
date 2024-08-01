@@ -2,7 +2,7 @@ type media = {id: number, src: string, duration: number, type: string};
 const PlaylistData: media[] = [
     {
       id: 1,
-      src: "/Users/canborcbakan/introtots/media/IMG_7276-transformed.jpeg",
+      src: "/Users/canborcbakan/introtots/dist/media/IMG_7276-transformed.jpeg",
       duration: 5000,
       type: "image"
     },

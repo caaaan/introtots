@@ -5,22 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>INTRO TO TYPESCRIPT</title>
-        <link rel="stylesheet" href="styles.css">
-        <div id="imageContainer" class="center"></div>
-        <script src="app.js" defer></script>
-        <script>
-            try{
-                const response = fetch('/media');
-                console.log(response);
-                const data = response.json();
-                const imageurl = data.url;
-                var imageContainer = document.getElementById('imageContainer');
-                console.log(data.src);
-                imageContainer.innerHTML = `<img src=${data.src}">`; 
-            }catch (error) {
-      console.error('Error fetching image URL:', error);
-    }
-            
-        </script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <div id="mediaContainer" class="center"></div>
+        <script src="frontend.js" ></script>
     </head>
 </html>
