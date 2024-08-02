@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(mediaData)
       const mediaContainer = document.getElementById('mediaContainer');
       if (!mediaContainer) return;
-  
       if (mediaData.type === 'image') {
         const img = document.createElement('img');
         img.src = mediaData.src;
+        
         mediaContainer.appendChild(img);
       } else if (mediaData.type === 'video') {
         const video = document.createElement('video');

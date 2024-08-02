@@ -10,11 +10,15 @@ const data_js_1 = __importDefault(require("./data.js"));
 const app = (0, express_1.default)();
 const port = 3000;
 // Serve static files from the "dist" directory / + '/dist'
+//app.use(express.static(__dirname+"/media"));
+app.use('/media', express_1.default.static(path_1.default.join(process.cwd(), '/dist/media/')));
 app.use(express_1.default.static(__dirname));
+console.log(__dirname + "!!!!");
+console.log(process.cwd() + "!!!!");
 //app.use(express.static(path.join(__dirname, '../media')));
 app.use('/routes', routes_1.default);
 app.get('/', (req, res) => {
-    res.sendFile(path_1.default.join(__dirname, '../dist', 'index.html'));
+    res.sendFile(path_1.default.join(__dirname, 'index.html'));
 });
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);

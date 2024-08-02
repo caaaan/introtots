@@ -9,11 +9,16 @@ const app = express();
 const port = 3000;
 
 // Serve static files from the "dist" directory / + '/dist'
+//app.use(express.static(__dirname+"/media"));
+
+app.use('/media', express.static(path.join(process.cwd(), '/dist/media/')));
 app.use(express.static(__dirname ));
+console.log(__dirname + "!!!!");
+console.log(process.cwd() + "!!!!");
 //app.use(express.static(path.join(__dirname, '../media')));
 app.use('/routes', routes);
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../dist', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 
