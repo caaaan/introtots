@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             } else if (mediaDataArray[mediaIndex].type === 'video') {
                 const video = document.createElement('video');
                 video.src = mediaDataArray[mediaIndex].src;
-                video.autoplay = true; // Automatically start playing the video
-                video.loop = true; // Optionally loop the video
+                video.autoplay = true; 
+                video.loop = true; 
                 mediaContainer.appendChild(video);
             }
       
