@@ -5,9 +5,10 @@
     width: 100%;
     align-content: space-between;
     justify-content: space-between;
+    margin: auto;
 }
 
 img {
-    width: 500px;
-    height: 500px;
+    width: 1000px;
+    height: 1000px;
 }

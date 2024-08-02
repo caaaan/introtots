@@ -43,7 +43,7 @@ for (const obj of items){
 app.get('/media', (req, res) => {
    // let imageSrc = items[0].src; // Your logic to get the image URL
     //res.json({ src: imageSrc });
-    res.json(items[0]);
+    res.json(items);
   });
 
   //imagelerin olduğu path'İ static olarak dışarıya açmaya bak
